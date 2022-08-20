@@ -1,0 +1,22 @@
+
+
+<ul class="nav justify-content-center btn btn-success">
+
+  <li class ="nav-item">
+    <a class="btn btn-primary" routerLink="/about" [skipLocationChange]="true">About</a>
+  </li>
+
+  <li class ="nav-item">
+    <a class="btn btn-primary" routerLink="/contact" [skipLocationChange]="true">contact</a>
+  </li>
+
+  <li class ="nav-item">
+    <a class="btn btn-primary" routerLink="/home" [state]="{name:'bala',email:'bala@gmail.com'}" [skipLocationChange]="true">Home</a>
+  </li>
+
+</ul>
+
+<button class="btn btn-primary" (click)="gotoabout()">gotoabout</button>
+<hr>
+<hr>
+<router-outlet></router-outlet>
