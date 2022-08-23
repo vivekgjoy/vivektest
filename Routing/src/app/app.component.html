@@ -16,7 +16,16 @@
 
 </ul>
 
+
+
 <button class="btn btn-primary" (click)="gotoabout()">gotoabout</button>
 <hr>
 <hr>
 <router-outlet></router-outlet>
+<hr>
+<hr>
+<p>{{title | uppercase}}</p>
+<p>{{title | lowercase}}</p>
+<p>{{day | date:'dd-MMM-yyyy'}}</p>
+<p>Current Date: {{day | date:'dd-MMM-yyyy'}}</p>
+
